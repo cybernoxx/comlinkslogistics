@@ -550,3 +550,7 @@ footer .footer-social > a {
 		height: 80vh;
 	}
 }
+
+.p-footer, .p-footer a{
+    color: black;
+}
