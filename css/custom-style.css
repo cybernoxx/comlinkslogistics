@@ -672,7 +672,7 @@ Footer
 
 @media(max-width: 480px){
     .quick-services{
-        padding-top: 40px;
+        padding-top: 60px;
     }
     .banner-caption{
         padding-bottom: 30px;
@@ -685,16 +685,16 @@ Footer
     .bannerSection{
       /* font-size: 20px;
       display: none; */
-      padding-bottom: 40px;
+      margin-bottom: 40px !important;
     }
     #banner-h1{
-      font-size: 40% !important;
+      font-size: 18px !important;
     }
     #banner-p{
-      font-size: 20% !important;
+      font-size: 17px !important;
     }
-    .clear-fix{
-      padding-bottom: 30px;
+    .clearfix{
+      padding-top: 60px !important;
     }
   }
   @media(max-width: 320px) and (max-height:700px){
@@ -704,12 +704,12 @@ Footer
       padding-bottom: 20px;
     }
     #banner-h1{
-      font-size: 30% !important;
+      font-size: 15px !important;
     }
     #banner-p{
-      font-size: 20% !important;
+      font-size: 15px !important;
     }
-    .clear-fix{
-      padding-bottom: 20px;
+    .clearfix{
+      padding-top: 50px !important;
     }
   }
