@@ -11,8 +11,8 @@
 
 	<title>Comlinks Logistics</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/custom-style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" lazyload>
+<link rel="stylesheet" type="text/css" href="css/custom-style.css" lazyload>
 <body>
 <!--Intro Section-->
 <section class="intro">
@@ -31,10 +31,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#What_we_Do">What We do</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Q&A">Q&A</a></li>
-          <li><a href="#get_a_quote" class="btn btn-default">Get a Quote</a></li>
+            <li><a href="index.html#What_we_Do" name="What_we_Do">What We do</a></li>
+            <li><a href="index.html#About" name="About">About</a></li>
+            <li><a href="index.html#Q&A">Q&A</a></li>
+          <li><a href="index.html#Contact_Us" name="contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -43,46 +43,15 @@
     <div class="banner-caption text-center">
       	<h1 id="banner-h1">Why Comlinks (k) Logistics</h1>
       	<p id="banner-p">We provide Faster and Reliable transportation of fragile products with expertise to ensure your goods in transit arrive as loaded with no loss due to damage or mishandling</p>
-      	<div class="action-box"><a href="#get_a_quote" class="btn btn-default">call us now</a></div>
+      	<div class="action-box"><a href="#Contact_Us" class="btn btn-default">call us now</a></div>
     </div>
   </div>
   <style>
-    @media(max-width: 480px) and (max-height:700px){
-      .bannerSection{
-        /* font-size: 20px;
-        display: none; */
-        padding-bottom: 40px;
-      }
-      #banner-h1{
-        font-size: 40% !important;
-      }
-      #banner-p{
-        font-size: 20% !important;
-      }
-      .clear-fix{
-        padding-bottom: 30px;
-      }
-    }
-    @media(max-width: 320px) and (max-height:700px){
-      .bannerSection{
-        /* font-size: 20px;
-        display: none; */
-        padding-bottom: 20px;
-      }
-      #banner-h1{
-        font-size: 30% !important;
-      }
-      #banner-p{
-        font-size: 20% !important;
-      }
-      .clear-fix{
-        padding-bottom: 20px;
-      }
-    }
+    
   </style>
 </div>
 </section>
-<div class="" style="padding"></div>
+<div class="clearfix"></div>
 <section class="quick-services">
 	<div class="container">
 		<div class="row">
@@ -144,7 +113,7 @@
 	</div>
 </section>
 
-<section class="about-section" id="about">
+<section id="About" class="about-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
@@ -243,7 +212,7 @@
  
   
 <!--Contact-->
-<section id="contact" class="section-padding">
+<section id="Contact_Us" class="section-padding">
   <div class="container">
     <div class="row">
       <div class="header-section text-center">
@@ -294,29 +263,6 @@
 <!--Footer-->
 <footer id="footer" class="footer">
   <div class="container text-center">
-
-    <h3>Contact Us</h3>
-
-    <form class="mc-trial row">
-      <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-        <div class=" controls">
-          <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-        </div>
-      </div>
-      <!-- End email input -->
-      <div class="form-group col-md-3 col-sm-4">
-        <div class=" controls">
-          <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-        </div>
-      </div>
-      <!-- End email input -->
-      <div class="col-md-2 col-sm-4">
-        <p>
-          <button name="submit" type="submit" class="btn btn-block btn-submit">
-          Submit <i class="fa fa-arrow-right"></i></button>
-        </p>
-      </div>
-    </form>
     <!-- End newsletter-form -->
     <ul class="social-links">
       <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
