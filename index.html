@@ -11,8 +11,24 @@
 
 	<title>Comlinks Logistics</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" lazyload>
-<link rel="stylesheet" type="text/css" href="css/custom-style.css" lazyload>
+<noscript id="css-defer">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+</noscript>
+<script>
+var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("css-defer");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode)
+};
+var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+if (raf) raf(function() {
+    window.setTimeout(loadDeferredStyles, 0)
+});
+else window.addEventListener('load', loadDeferredStyles)
+</script>
 <body>
 <!--Intro Section-->
 <section class="intro">
@@ -60,6 +76,7 @@
 					<img src="img/feature_01.jpg" class="img-responsive">
 					<h2>Fragile Goods</h2>
 					<p>At Comlinks (K) Logistics we understand the extra care needed to transport fragile products.</p>
+          <br>
 					<br>
 				</div>
 			</div>
@@ -68,6 +85,7 @@
 					<img src="img/feature_02.jpg"  class="img-responsive">
 					<h2>Chain store transport</h2>
 					<p>We are an excellent choice to handle your Chain store transport needs. We have a fleet of trucks which are set to accommodate different cargo sizes. We have also specialized trucks to cater for fridgeration and fresh produce product transport ensuring your goods are properly delivered.</p>
+				</div>
 					</div>
 			</div>
 			<div class="col-md-4 col-sm-4">
@@ -273,9 +291,9 @@
 </footer>
 <!--/ Footer-->
 
-<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/custom.js"></script>
-<script src="contactform/contactform.js"></script>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" defer></script>
+<script src="js/bootstrap.min.js" type="text/javascript" defer></script>
+<script src="js/custom.js" defer></script>
+<script src="contactform/contactform.js" defer></script>
 </body>
 </html>
